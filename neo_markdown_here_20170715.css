@@ -1,0 +1,209 @@
+/*定义正文的字体大小、行距、字间距*/
+.markdown-here-wrapper {
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+}
+
+/*两类代码的通用设置，包括使用高亮的和无高亮的*/
+pre, code {
+  font-size: 14px;/*代码字体大小*/
+  font-family: Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
+  margin: auto 5px;
+}
+
+code {
+  border: 1px solid #EAEAEA;
+  background-color: #F8F8F8;
+  white-space: pre-wrap;
+  border-radius: 2px;/*有框的圆角半径*/
+  display: inline;
+}
+
+pre {
+  font-size: 15px;
+  line-height: 1.4em;
+  display: block; !important;
+}
+
+pre code {
+  white-space: pre;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 1px 1px;
+  display: block !important;
+}
+
+/*设置加粗体的颜色*/
+strong, b{
+  color: #1976D2;
+}
+
+/*倾斜字体的颜色*/
+em, i {
+  color: #FF9800;
+}
+
+/*设置分割线的格式*/
+hr {
+  border: 1px solid #E1F5FE;
+  margin: 1.5em auto;/*距上下两行的距离*/
+}
+
+/*设置每两段之间的距离，规定的是段落上方距离上一段的距离*/
+p {
+  margin: 1.5em 5px !important;
+}
+
+table, pre, dl, blockquote, q, ul, ol {
+  margin: 10px 5px;/*上、左边距*/
+}
+
+/*有序列表、无序列表的左边空出*/
+ul, ol {
+  padding-left: 15px;
+}
+
+li {
+  margin: 10px;
+}
+
+li p {
+  margin: 10px 0 !important;
+}
+
+/*二级列表的间隔和左侧的空出*/
+ul ul, ul ol, ol ul, ol ol {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* 次级列表以小写罗马字标序 */
+ol ol, ul ol {
+  list-style-type: lower-roman;
+}
+
+/* 次次级列表以小写字母标序 */
+ul ul ol, ul ol ol, ol ul ol, ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+/*设置无序列表的点形状，可选：circle\square\upper-roman\low-alpha */
+ul {
+  list-style-type: circle;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+dl dd {
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
+
+/*设置引用语句格式*/
+blockquote, q {
+  border-left: 2px solid #1976D2;
+  padding: 0 10px;/*上下的空白，字距离左侧竖线的距离*/
+  color: #777;/*依次减淡：000-999-aaa-fff*/
+  quotes: none;
+  background-color: ;/*块引用的背景*/
+  margin-left: 1em;/*竖线距离左侧页边的距离*/
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: none;
+}
+
+/*设置各级标题的大小*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-family: ;/*规定字体库，从前至后自动选择一个能够显示的字体*/
+  font-style: bold !important;/*样式，包括bold/italic/oblique */
+  color: #1976D2 !important;
+  text-align: center !important;/* 对齐方式：left/center/right */
+  margin: 1.5em 5px !important;
+  padding: 0.5em 1em !important;
+}
+
+h1 {
+  font-size: 24px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+h2 {
+  font-size: 20px !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+  color: #777;
+}
+
+table {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+}
+
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*表格整体设置*/
+/*tr表示表格主体，td表示表格头*/
+table tr th, table tr td {
+  font-size: 16px;
+  font-family: ;/*设置表格中的字体*/
+  border: 1px solid #CCC;/*表格边框*/
+  margin: 0;
+  padding: 5px 10px;/*上下、左右*/
+}
+
+/*表格主体设置*/
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;/*设置表格主体底色*/
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #F8F8F8;/*单独设置偶数行的底色，达到覆盖*/
+}
+
+/*表格头设置*/
+table tr th {
+  font-weight: bold;
+  color: #eee;
+  border: 1px solid #1976D2;
+  background-color: #1976D2;/*底色*/
+}
